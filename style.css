@@ -1,10 +1,24 @@
 h1 {
     font-size: 100px;
-    color: #00f050;
+    color: #3700ff;
     text-align: center;
     font-weight: 800;
 }
 
-.red-text{
+.textt{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.pic {
+    display: block;
+    margin: 0 auto;
+}
+
+.backg{
+    background-color: #b0e6e3d0;
+}
+.kaijor{
+    font-size: 300%;
     color: red;
 }
