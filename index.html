@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</html><html>
-    <head>
-        <title>my website</title>
-    </head>
-    <body>
-        <div class="backg">
-            <h1>My Resume</h1>
-            <img class="pic" src="https://i.ytimg.com/vi/rk2PybMokQA/maxresdefault.jpg" alt="">
-            <div class="textt">
-                <p>Name:บอย เด็กท้องโบ๋</p>
-                <p>Age : 9</p>
-                <p>Gender : ชาย</p>
-                <p><span class="kaijor">ไก่จ๊อ</span> ผลิตจากเนื้อไก่คัดพิเศษคลุกเคล้ากับส่วนผสมที่คัดสรรอย่างดี ทั้งเห็ดหอม ข้าวโพด วุ้นเส้น และผักต่างๆ ปรุงด้วยเครื่องเทศรสกลมกล่อม ห่อด้วยแผ่นฟองเต้าหู้คุณภาพดี</p>
-            </div>
-            <a href="https://onlearn.it.kmitl.ac.th/">It onlearn</a>
+    <script>
+        function setname(){
+            const namefild = document.getElementById("username");
+            const name = namefild.value;
+            const title = document.getElementById("profile");
+            title.innerText = name + "profile";
+
+        }
+        function setimage(){
+            const profileimage = document.getElementById("url").value
+            const profile = document.getElementById("parent");
+            profile.style.backgroundImage="url("+profileimage+")"
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="parent">
+            <div class="child"></div>
         </div>
-    </body>
+        <br>
+        <div id="profile"><h1>Nunu Profile</h1></div>
+        <div class="flex">
+            <p>set profile picture
+            <input type="text" id="username">
+            <button onclick="setname()">Click Me</button>
+        </div>
+        <div class="flex">
+            <p>image url</p>
+            <input type="text" id="url">
+            <button onclick="setimage()">Click Me</button>
+        </div>
+        <div class="gallery">
+            <div class="imagee1"></div>
+            <div class="imagee2"></div>
+            <div class="imagee3"></div>
+            <div class="imagee4"></div>
+            <div class="imagee5"></div>
+            <div class="imagee6"></div>
+            <div class="imagee7"></div>
+            <div class="imagee8"></div>
+            <div class="imagee9"></div>
+        </div>
+    </main>
+</body>
 </html>
